@@ -1,4 +1,4 @@
-# Repositorio de Prueba
+# Repositorio de Practica en Git y GitHub
 ![Imagen de GitHub](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRpXArTpZ2ZMqnGvhBXvc_Fwe0dfPD9L3rsxIZbaSH7RHHoapFt5uP83kq&s=10)
 
 
