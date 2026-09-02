@@ -28,29 +28,3 @@ def calcular(a, b, operacion):
     else:
         raise ValueError("Operación no válida.")
 
-def main():
-    operaciones = {1: '+', 2: '-', 3: '*', 4: '/'}
-    
-    while True:
-        mostrar_menu()
-        opcion = int(solicitar_num("Elige una opción (1-5): "))
-        
-        if opcion == 5:
-            print("Fin")
-            break
-            
-        if opcion in operaciones:
-            num1 = solicitar_num("Ingresa el primer número: ")
-            num2 = solicitar_num("Ingresa el segundo número: ")
-            op = operaciones[opcion]
-            
-            try:
-                resultado = calcular(num1, num2, op)
-                print(f"Resultado: {resultado}")
-            except (ZeroDivisionError, ValueError) as e:
-                print(f"Error: {e}")
-        else:
-            print("Opción no válida. Elige del 1 al 5.")
-
-if __name__ == "__main__":
-    main()
