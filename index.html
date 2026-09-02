@@ -95,31 +95,172 @@
 </head>
 <body>
 
+<body>
+
   <header class="site-header">
     <div class="header-inner">
       <a href="#" class="logo">X<span>avier</span></a>
-
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-
       <nav class="nav">
         <ul class="nav-list">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proposito">Propósito</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#comandos">Comandos</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h1>Domina <span class="highlight">Git</span> y <span class="highlight">GitHub</span></h1>
+      <p>Repositorio de práctica personal de <strong>Irving</strong>. Un espacio para experimentar, aprender y documentar el flujo de trabajo con control de versiones.</p>
+      <div class="hero-actions">
+        <a href="https://github.com/" class="btn-primary" target="_blank">Ver en GitHub</a>
+        <a href="#comandos" class="btn-secondary">Comandos rápidos</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="proposito" class="section">
+    <div class="container">
+      <h2> Propósito del Repositorio</h2>
+      <p>Este proyecto no es solo código, es un laboratorio de aprendizaje:</p>
+      <ul class="feature-list">
+        <li><strong>Aprender:</strong> Practicar comandos de Git desde cero hasta avanzado.</li>
+        <li><strong>Experimentar:</strong> Probar ramas, merge conflicts y flujos de colaboración.</li>
+        <li><strong>Documentar:</strong> Guardar configuraciones útiles y snippets de terminal.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="tecnologias" class="section bg-dark">
+    <div class="container">
+      <h2>🛠️ Stack Tecnológico</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Herramienta</th>
+              <th>Uso Principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>Git</code></td>
+              <td>Control de versiones local</td>
+            </tr>
+            <tr>
+              <td><code>GitHub</code></td>
+              <td>Hosting y colaboración remota</td>
+            </tr>
+            <tr>
+              <td><code>VS Code</code></td>
+              <td>Editor de código e integración Git</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="comandos" class="section">
+    <div class="container">
+      <h2>⌨️ Comandos Esenciales</h2>
+      <p>Copia y pega estos comandos en tu terminal:</p>
+      <div class="code-block">
+        <div class="code-header">
+          <span>bash</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+        </div>
+        <pre><code># Clonar un repositorio remoto
+git clone https://github.com/usuario/repo.git
+
+# Ver el estado actual de los archivos
+git status
+
+# Sincronizar cambios desde GitHub
+git pull origin main
+
+# Preparar archivos para el commit
+git add .
+
+# Guardar cambios con un mensaje descriptivo
+git commit -m "Mensaje claro y conciso"
+
+# Subir cambios a GitHub
+git push origin main
+
+# Ver el historial de commits
+git log --oneline --graph</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Irving. Repositorio de práctica Git/GitHub.</p>
+    </div>
+  </footer>
+
+  <style>
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 4rem 1.25rem; }
+    .highlight { color: #38bdf8; }
+    .section { padding: 4rem 0; border-bottom: 1px solid #1f2937; }
+    .bg-dark { background: #0b1120; }
+    h2 { font-size: 2rem; margin-bottom: 1.5rem; color: #fff; }
+    p { color: #9ca3af; line-height: 1.6; margin-bottom: 1rem; }
+    .hero { padding: 6rem 0; text-align: center; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; color: #fff; }
+    .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; }
+    .btn-primary, .btn-secondary {
+      padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: 0.2s;
+    }
+    .btn-primary { background: #38bdf8; color: #111827; }
+    .btn-primary:hover { background: #0ea5e9; }
+    .btn-secondary { border: 1px solid #374151; color: #fff; margin-left: 10px; }
+    .btn-secondary:hover { border-color: #38bdf8; color: #38bdf8; }
+    .feature-list { list-style: none; padding-left: 0; display: grid; gap: 1rem; }
+    .feature-list li { background: #1f2937; padding: 1rem; border-radius: 8px; border-left: 4px solid #38bdf8; color: #d1d5db; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #374151; }
+    th { color: #fff; font-weight: 600; }
+    td { color: #9ca3af; }
+    code { background: #374151; padding: 2px 6px; border-radius: 4px; color: #38bdf8; font-family: monospace; }
+    .code-block { background: #000; border: 1px solid #374151; border-radius: 8px; overflow: hidden; margin-top: 1rem; }
+    .code-header { background: #1f2937; padding: 0.5rem 1rem; display: flex; justify-content: space-between; align-items: center; color: #9ca3af; font-size: 0.8rem; }
+    .copy-btn { background: none; border: 1px solid #4b5563; color: #fff; padding: 2px 8px; border-radius: 4px; cursor: pointer; font-size: 0.75rem; }
+    .copy-btn:hover { background: #374151; }
+    pre { padding: 1rem; overflow-x: auto; }
+    pre code { background: none; color: #e5e7eb; padding: 0; font-size: 0.9rem; line-height: 1.5; }
+    .footer { text-align: center; padding: 2rem 0; color: #6b7280; font-size: 0.9rem; }
+  </style>
+
   <script>
+
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.nav');
-
     toggle.addEventListener('click', () => {
       const abierto = nav.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', abierto);
     });
+
+
+    function copyCode(btn) {
+      const codeBlock = btn.parentElement.nextElementSibling.querySelector('code');
+      const text = codeBlock.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = btn.innerText;
+        btn.innerText = '¡Copiado!';
+        btn.style.color = '#38bdf8';
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.style.color = '';
+        }, 2000);
+      });
+    }
   </script>
 
 </body>
