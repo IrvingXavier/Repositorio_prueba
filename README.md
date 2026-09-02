@@ -37,3 +37,18 @@ git commit
 
 # mostrar los commits
 git log
+
+# Clonar un repositorio remoto
+git clone https://github.com/usuario/repo.git
+
+# Preparar archivos para el commit
+git add .
+
+# Guardar cambios con un mensaje descriptivo
+git commit -m "Mensaje claro y conciso"
+
+# Subir cambios a GitHub
+git push origin main
+
+# Ver el historial de commits
+git log --oneline --graph
