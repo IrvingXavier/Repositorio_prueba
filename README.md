@@ -1,5 +1,5 @@
 # Repositorio de Prueba
-
+![Descripción](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRpXArTpZ2ZMqnGvhBXvc_Fwe0dfPD9L3rsxIZbaSH7RHHoapFt5uP83kq&s=10)
 ¡Hola! Soy **Irving** y este es mi repositorio de práctica con Git y GitHub.
 
 ##  Propósito
