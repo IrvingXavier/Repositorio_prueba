@@ -18,7 +18,7 @@ Este repositorio se utiliza para:
 |-------------|-----|
 | Git         | Control de versiones |
 | GitHub      | Hosting del repositorio |
-| VisualSC    | Editor de codigo |
+| Visual Estudio Code    | Editor de codigo |
 
 ##  Comandos útiles
 
